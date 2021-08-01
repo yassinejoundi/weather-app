@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="weather.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>weather app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <input type="text" id="city" />
+        <button id="search">
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      <div class="content">
+        <div class="no-data">No Data Found</div>
+        <div class="main">
+          <h1 class="state">Marrakech</h1>
+          <h3 class="date">31-07-2021</h3>
+          <div class="first">
+            <div class="value">
+              <p class="degre"><span>23</span> °C</p>
+              <h6 class="time">18:30</h6>
+            </div>
+            <div class="icon-div">
+              <i class="fas fa-cloud-moon"></i>
+            </div>
+          </div>
+          <div class="second">
+            <div class="humidity">
+              <div class="circle">
+                <p>22</p>
+                <p>%</p>
+              </div>
+              <p>humidity</p>
+            </div>
+
+            <div class="wind">
+              <div class="circle">
+                <p>3.09</p>
+                <p>Km/h</p>
+              </div>
+              <p>wind</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

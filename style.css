@@ -1,0 +1,120 @@
+:root {
+  --size: 600px;
+  --input-height: 50px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("https://images.unsplash.com/photo-1534088568595-a066f410bcda?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: var(--size);
+  height: var(--size);
+  background-color: #333b42;
+  opacity: 0.8;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.header input {
+  border: none;
+  outline: none;
+  padding: 0.4em 1em;
+  border-radius: 24px;
+  background: #44515c;
+  font-family: inherit;
+  font-size: 105%;
+  width: 70%;
+  height: var(--input-height);
+  margin: 0 5px;
+}
+
+.header button {
+  height: var(--input-height);
+  width: var(--input-height);
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  background: #44515c;
+  font-size: 105%;
+  cursor: pointer;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100% - 90px);
+}
+.main {
+  margin: auto !important;
+  display: none;
+}
+
+.no-data,
+.state {
+  font-size: 2em;
+}
+
+.first,
+.second {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon-div {
+  font-size: 90px;
+}
+
+.value,
+.icon-div {
+  padding: 20px;
+}
+.degre {
+  font-size: 44px;
+  font-weight: bold;
+}
+
+.time,
+.humidity p,
+.wind p {
+  font-size: 1.17em;
+}
+
+.circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 10px solid;
+  align-items: center;
+  border-top: 10px solid;
+  border-bottom: 10px solid #27b5dd;
+  border-left: 10px solid #27b5dd;
+  border-right: 10px solid;
+  padding: 10px;
+  font-size: 18px;
+  margin: 20px;
+}
