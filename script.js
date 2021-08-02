@@ -14,7 +14,7 @@ document.querySelector('#search').addEventListener('click', ()=>{
     .then((data) => {
         if (ok) {
             document.querySelector('.state').innerText = city
-            document.querySelector('.date').innerText = `${('0' + new Date().getDate()).slice(-2)}-${('0' + new Date().getMonth()).slice(-2)}-${new Date().getUTCFullYear()}`
+            document.querySelector('.date').innerText = `${('0' + new Date().getDate()).slice(-2)}-${('0' + (new Date().getMonth() + 1)).slice(-2)}-${new Date().getUTCFullYear()}`
             document.querySelector('.degre span').innerText = data.main.temp
             document.querySelector('.time').innerText = `Updated ${('0' + new Date().getHours()).slice(-2)}:${('0' + new Date().getMinutes()).slice(-2)}`
             document.querySelectorAll('.circle p')[0].innerText = data.main.humidity
